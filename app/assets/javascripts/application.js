@@ -13,5 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require bootstrap-sprockets
-//= require_tree .
+//= require ./theme/jquery.easing.min.js
+//= require ./theme/classie.js
+//= require ./theme/cbpAnimatedHeader.js
+//= require ./theme/jqBootstrapValidation.js
+//= require ./theme/contact_me.js
+//= require ./theme/agency.js

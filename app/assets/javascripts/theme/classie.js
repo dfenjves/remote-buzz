@@ -11,7 +11,7 @@
 /*jshint browser: true, strict: true, undef: true */
 /*global define: false */
 
-( function( window ) {
+!( function( window ) {
 
 'use strict';
 
