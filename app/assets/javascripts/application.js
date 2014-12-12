@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require ./theme/jquery.easing.min.js
-//= require ./theme/classie.js
 //= require ./theme/cbpAnimatedHeader.js
 //= require ./theme/jqBootstrapValidation.js
 //= require ./theme/contact_me.js
