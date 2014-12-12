@@ -3,6 +3,19 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+
+/* Include Bootstrap */
+@import "bootstrap";
+
+/* Green Theme */
+$primary-color: #42CA87;
+$primary-color-dark: #319765;
+
+/* Blue Theme */
+/*$primary-color: #428bca;*/
+/*$primary-color-dark 3071a9;*/
+
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -11,7 +24,7 @@ body {
   color: #777;
 }
 .text-primary {
-  color: #428bca;
+  color: $primary-color;
 }
 p {
   font-size: 14px;
@@ -28,13 +41,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #428bca;
+  color: $primary-color;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #3071a9;
+  color: $primary-color-dark;
 }
 h1,
 h2,
@@ -57,8 +70,8 @@ h6 {
 }
 .btn-primary {
   color: white;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: $primary-color;
+  border-color: $primary-color;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -69,8 +82,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #3071a9;
-  border-color: #2d6ca2;
+  background-color: $primary-color-dark;
+  border-color: $primary-color;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -92,17 +105,17 @@ fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: $primary-color;
+  border-color: $primary-color;
 }
 .btn-primary .badge {
-  color: #428bca;
+  color: $primary-color;
   background-color: white;
 }
 .btn-xl {
   color: white;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: $primary-color;
+  border-color: $primary-color;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -116,8 +129,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: #3071a9;
-  border-color: #2d6ca2;
+  background-color: $primary-color-dark;
+  border-color: $primary-color-dark;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -139,11 +152,11 @@ fieldset[disabled] .btn-xl:hover,
 fieldset[disabled] .btn-xl:focus,
 fieldset[disabled] .btn-xl:active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: $primary-color;
+  border-color: $primary-color;
 }
 .btn-xl .badge {
-  color: #428bca;
+  color: $primary-color;
   background-color: white;
 }
 .navbar-default {
@@ -151,28 +164,28 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
-  color: #428bca;
+  color: $primary-color;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-  color: #3071a9;
+  color: $primary-color-dark;
 }
 .navbar-default .navbar-collapse {
   border-color: rgba(255,255,255,0.02);
 }
 .navbar-default .navbar-toggle {
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: $primary-color;
+  border-color: $primary-color;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #428bca;
+  background-color: $primary-color;
 }
 .navbar-default .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -183,18 +196,18 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-  color: #428bca;
+  color: $primary-color;
   outline: none;
 }
 .navbar-default .navbar-nav>.active>a {
   border-radius: 0;
   color: white;
-  background-color: #428bca;
+  background-color: $primary-color;
 }
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
   color: white;
-  background-color: #3071a9;
+  background-color: $primary-color-dark;
 }
 @media (min-width: 768px) {
   .navbar-default {
@@ -310,7 +323,7 @@ section h3.section-subheading {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(66,139,202,0.9);
+  background: $primary-color;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -418,7 +431,7 @@ section h3.section-subheading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #428bca;
+  background-color: $primary-color;
   color: white;
   border-radius: 100%;
   border: 7px solid #f1f1f1;
@@ -573,7 +586,7 @@ section#contact .form-group textarea.form-control {
   height: 236px;
 }
 section#contact .form-control:focus {
-  border-color: #428bca;
+  border-color: $primary-color;
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
@@ -640,7 +653,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #428bca;
+  background-color: $primary-color;
 }
 .btn:focus,
 .btn:active,
@@ -711,11 +724,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #428bca;
+  background: $primary-color;
 }
 ::selection {
   text-shadow: none;
-  background: #428bca;
+  background: $primary-color;
 }
 img::selection {
   background: transparent;
@@ -724,5 +737,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #428bca;
+  webkit-tap-highlight-color: $primary-color;
 }
