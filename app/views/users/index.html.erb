@@ -1,0 +1,19 @@
+  <section class="">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        <h3>Users</h3>
+        <div class="column">
+          <table class="table">
+            <tbody>
+              <% @users.each do |user| %>
+              <tr>
+                <%= render user %>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
